@@ -1,3 +1,5 @@
+import CustomInput from "./components/CustomInput";
+
 function App() {
   /**
    * Napraviti formu za dodavanje gradova i temperatura
@@ -16,22 +18,9 @@ function App() {
               <div className="mb-3 mt-4">
                 <h5 className="fw-bold text-uppercase mb-2">Weather form</h5>
                 <form className="mb-3">
-                  <div className="form-group mb-3">
-                    <label className="form-label text-center ">Ime grada</label>
-                    <input type="text" className="form-control" />
-                  </div>
-                  <div className="form-group mb-3">
-                    <label className="form-label text-center ">
-                      Ime drzave
-                    </label>
-                    <input type="text" className="form-control" />
-                  </div>
-                  <div className="form-group mb-3">
-                    <label className="form-label text-center ">
-                      Temperatura
-                    </label>
-                    <input type="number" className="form-control" />
-                  </div>
+                  <CustomInput labelName="Ime grada" type="text" />
+                  <CustomInput labelName="Ime drzave" type="text" />
+                  <CustomInput labelName="Temperatura" type="number" />
                   <div className="d-grid">
                     <button className="btn btn-primary" type="submit">
                       Unesi
